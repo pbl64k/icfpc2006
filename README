@@ -3,3 +3,12 @@ Universal Machine implementation as specified by ICFPC '06
 I didn't actually participate in that contest, and tinkered with the UM
 around 2008-2009 to look at a few problems in preparation for ICFPC '09.
 
+This should be fully capable of running sandmark, codex and reference um,
+as supplied by CMU.
+
+stress.um is a simple hand-coded test intended to bring any
+implementation with non-CoW pages to its knees. Which it does neatly.
+Unfortunately, CoW pages are useless in codex usage scenarios.
+
+./um --selftest will run a simple self-test (duh). It requires
+sandmark.umz that you should obtain elsewhere.

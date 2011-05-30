@@ -18,7 +18,7 @@ R_UM_NS_START
 		friend class PageLoader;
 		protected:
 			MemMan(): pages_(new PageStorage), ids_(new RecycledIdList),
-					rootPage_(NULL), nextPage_(1) {
+					rootPage_(0), nextPage_(1) {
 #ifdef R_UM_OPT_ENFORCE_LOWLEV_VALIDITY
 				assert(isValidBlock());
 #endif

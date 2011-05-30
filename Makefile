@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -ansi -pedantic -Wall -Wextra -O3
+CXXFLAGS = -std=c++98 -pedantic -Wall -Wextra -O3
 HPRJ = um.hpp
 HMEM = mem.hpp blk.hpp raw.hpp
 HPMM = $(HPRJ) $(HMEM)

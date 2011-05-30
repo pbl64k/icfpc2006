@@ -4,6 +4,9 @@ R_UM_NS_START
 
 #ifdef R_UM_OPT_LINUX_NOLINEBUF_STDIN
 	termios Console::termiosOld_;
+#endif
+
+#ifdef R_UM_OPT_STDOUT_SNAPSHOT
 	FILE *Console::snapshot_;
 #endif
 
